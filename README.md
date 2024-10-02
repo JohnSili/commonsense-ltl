@@ -1,6 +1,6 @@
 # Validation Module
 
-This project is a validation module designed to .
+This project is a commonsense validation module.
 
 ## Project Structure
 
