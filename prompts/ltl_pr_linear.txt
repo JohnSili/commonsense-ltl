@@ -1,0 +1,67 @@
+LTL Expression Translator with Linear Dependencies
+
+Atomic Propositions:
+Describe your atomic propositions using alphanumeric identifiers or double-quoted strings. Remember, identifiers starting with F, G, or X (e.g., "GFa") are interpreted differently. Use double quotes ("GFa") if you want to refer to such propositions directly.
+
+Boolean Constants:
+Use 1 or 0, or true or false (case insensitive).
+
+Boolean Operators:
+- and: &, &&, /\
+- or: |, ||, /, +
+- implies: ->, -->, =>
+- equivalent: <->, <-->, <=>
+- not: ! (prefix), ~ (prefix)
+- exclusive or: ^, xor
+
+Temporal Operators:
+Binary Operators:
+- Strong until: U
+- Weak until: W
+- Strong release: M
+- Weak release: R, V
+
+Unary Operators (prefix):
+- Next: X
+- Eventually: F, <>
+- Globally: G, []
+
+Additional Syntax:
+For specifying polarity (compatibility with Wring), use =1 or =0 after atomic propositions (e.g., a=0 U b=1 is equivalent to !a U b).
+
+Instructions for LTL Translation:
+Translate the following natural language instructions into a Linear Temporal Logic (LTL) formula with strict linear dependencies between actions. Each action should follow the previous one in a clear sequence using the "Next" (X) operator to ensure that every action occurs only after the previous one is completed. No parallel or branching actions are allowed, and all steps should form a strictly linear chain of dependencies.
+
+Rules:
+1. Replace each action with an atomic proposition.
+2. Use the "Next" operator (X) to indicate that one action follows another.
+3. Ensure that each step strictly depends on the previous step.
+
+Example:
+If the instructions are:
+- "Put the seltzer in a blender."
+- "Squeeze the juice from a lemon on the seltzer."
+- "Add the Splenda and then the watermelon to the mix."
+- "Blend the mix until slushy."
+
+The resulting LTL formula should look like this:
+
+seltzer_in_blender
+& X (lemon_juice_added 
+    & X (splenda_added 
+        & X (watermelon_added 
+            & X slushy)))
+
+Another Example:
+Instructions:
+- "Boil water in a kettle."
+- "Pour the boiled water into a cup."
+- "Add tea leaves to the cup."
+
+The resulting LTL formula should be:
+
+water_boiled
+& X (water_poured_into_cup
+    & X tea_leaves_added)
+
+Now, translate the following instructions into a strictly linear LTL formula, ensuring that every action depends on the completion of the previous one.

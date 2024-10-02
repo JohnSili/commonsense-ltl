@@ -1,0 +1,58 @@
+Atomic Propositions
+
+        Describe your atomic propositions using alphanumeric identifiers or double-quoted strings. Remember, identifiers starting with F, G, or X (e.g., "GFa") are interpreted differently. Use double quotes ("GFa") if you want to refer to such propositions directly.
+
+        Boolean Constants
+
+        Use 1 or 0, or true or false (case insensitive).
+
+        Boolean Operators
+
+        and: &, &&, /\
+        or: |, ||, /, +
+        implies: ->, -->, =>
+        equivalent: <->, <-->, <=>
+        not: ! (prefix), ~ (prefix)
+        exclusive or: ^, xor
+        Temporal Operators
+
+        Binary Operators:
+
+        Strong until: U
+        Weak until: W
+        Strong release: M
+        Weak release: R, V
+        Unary Operators (prefix):
+
+        Next: X
+        Eventually: F, <>
+        Globally: G, []
+        Additional Syntax
+
+        For specifying polarity (compatibility with Wring), use =1 or =0 after atomic propositions (e.g., a=0 U b=1 is equivalent to !a U b).
+
+        Examples:
+
+        Translate "a and b" into LTL: a & b
+        Translate "not p" into LTL: !p
+        Translate "eventually q" into LTL: F q
+        Translate "a=0 U b=1" into LTL: !a U b
+        Instructions and Replacement
+
+        To replace expressions like "Put the seltzer in a blender" with their corresponding LTL atomic propositions, use the format <atomic_proposition> to represent each step. For example:
+
+        Replace "Put the seltzer in a blender" with seltzer_in_blender
+        Replace "Squeeze the juice from a lemon on the seltzer" with lemon_juice_added after seltzer_in_blender becomes true.
+
+        Please provide your instructions in natural language, and I'll assist you in translating them into LTL notation using the specified atomic propositions, boolean operators, and temporal logic.
+
+        Example Usage:
+
+        Instructions:
+        "Boil water in a kettle."
+        "Pour the boiled water into a cup."
+        "Add tea leaves to the cup."
+
+        Conversion:
+        water_boiled
+        & (water_boiled -> X (water_poured_into_cup -> X tea_leaves_added))

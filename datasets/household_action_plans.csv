@@ -1,0 +1,258 @@
+Goal,Plan,LTL,,,,,,,,1,2,3
+Clean the House,Make a cleaning checklist. Declutter each room. Dust surfaces. Vacuum or sweep floors. Mop floors. Clean windows. Scrub bathrooms. Clean Kitchen. Change bed linens,"G(make_cleaning_checklist ->
+  X(declutter_each_room ->
+    X(dust_surfaces ->
+      X(vacuum_or_sweep_floors ->
+        X(mop_floors ->
+          X(clean_windows ->
+            X(scrub_bathrooms ->
+              X(clean_kitchen ->
+                X(change_bed_linens)))))))))
+",,,,,,,,,,
+Laundry Day,Sort clothes by color and fabric. Load washing machine. Add detergent. Set washing machine cycle. Transfer clothes to dryer or hang to dry. Fold dried clothes. Iron clothes if necessary. Put away folded clothes,"G(sort_clothes_by_color_and_fabric ->
+  X(load_washing_machine ->
+    X(add_detergent ->
+      X(set_washing_machine_cycle ->
+        X(transfer_clothes_to_dryer_or_hang_to_dry ->
+          X(fold_dried_clothes ->
+            X(iron_clothes_if_necessary ->
+              X(put_away_folded_clothes))))))))",,,,,,,,,,
+Dishwashing,Gather dirty dishes. Scrape off food scraps. Load dishwasher or fill sink with soapy water. Wash dishes or start dishwasher. Rinse and dry dishes. Put away clean dishes,"G(gather_dirty_dishes ->
+  X(scrape_off_food_scraps ->
+    X(load_dishwasher_or_fill_sink_with_soapy_water ->
+      X(wash_dishes_or_start_dishwasher ->
+        X(rinse_and_dry_dishes ->
+          X(put_away_clean_dishes))))))",,,,,,,,,,
+Yard Work,Mow the lawn. Trim edges and hedges. Weed flower beds. Water plants. Rake leaves. Dispose of yard waste. Clean gardening tools,"G(mow_the_lawn ->
+  X(trim_edges_and_hedges ->
+    X(weed_flower_beds ->
+      X(water_plants ->
+        X(rake_leaves ->
+          X(dispose_of_yard_waste ->
+            X(clean_gardening_tools)))))))",,,,,,,,,,
+Pet Care,Feed pets. Change water bowls. Clean litter box or cage. Brush fur. Take pets for a walk. Play with pets. Schedule vet check-up if necessary,"G(feed_pets ->
+  X(change_water_bowls ->
+    X(clean_litter_box_or_cage ->
+      X(brush_fur ->
+        X(take_pets_for_a_walk ->
+          X(play_with_pets ->
+            X(schedule_vet_checkup_if_necessary)))))))",,,,,,,,,,
+Cooking Dinner,"Decide on a recipe. Gather ingredients. Prep ingredients (wash, chop, etc.). Cook according to recipe. Set the table. Serve dinner. Store leftovers. Clean kitchen","G(decide_on_recipe ->
+  X(gather_ingredients ->
+    X(prep_ingredients ->
+      X(cook_according_to_recipe ->
+        X(set_the_table ->
+          X(serve_dinner ->
+            X(store_leftovers ->
+              X(clean_kitchen))))))))
+",,,,,,,,,,
+Weekly Maintenance,Check and replace air filters. Test smoke and carbon monoxide detectors. Clean out the fridge. Dispose of expired products. Organize pantry. Check and organize medicine cabinet. Refill necessary household supplies,"G(check_and_replace_air_filters ->
+  X(test_smoke_and_carbon_monoxide_detectors ->
+    X(clean_out_the_fridge ->
+      X(dispose_of_expired_products ->
+        X(organize_pantry ->
+          X(check_and_organize_medicine_cabinet ->
+            X(refill_necessary_household_supplies)))))))",,,,,,,,,,
+Turn on TV in living room,"Entering the living room.
+Finding the remote control.
+Turning on the TV.","G(living_room_entered ->
+  X(television_found ->
+    X(television_turned_on)))",,,,,,,,,,
+Clean the Living Room,Make a cleaning checklist. Declutter the living room. Dust surfaces. Vacuum or sweep floors. Mop floors. Clean windows. Organize books and magazines. Wipe down electronics,G(make_cleaning_checklist -> X(declutter_living_room -> X(dust_surfaces -> X(vacuum_or_sweep_floors -> X(mop_floors -> X(clean_windows -> X(organize_books_and_magazines -> X(wipe_down_electronics)))))))),,,,,,,,,,
+Clean the Kitchen,Make a cleaning checklist. Declutter countertops. Wipe down surfaces. Clean the sink. Sweep and mop floors. Clean the oven and stove. Wipe down appliances. Organize pantry,G(make_cleaning_checklist -> X(declutter_countertops -> X(wipe_down_surfaces -> X(clean_sink -> X(sweep_and_mop_floors -> X(clean_oven_and_stove -> X(wipe_down_appliances -> X(organize_pantry)))))))),,,,,,,,,,
+Clean the Bathroom,Make a cleaning checklist. Scrub the toilet. Clean the sink and countertop. Wipe mirrors. Scrub the shower or tub. Mop the floor. Replace towels. Restock toiletries,G(make_cleaning_checklist -> X(scrub_toilet -> X(clean_sink_and_countertop -> X(wipe_mirrors -> X(scrub_shower_or_tub -> X(mop_floor -> X(replace_towels -> X(restock_toiletries)))))))),,,,,,,,,,
+Clean the Bedroom,Make a cleaning checklist. Declutter the bedroom. Dust surfaces. Vacuum or sweep floors. Change bed linens. Organize closet. Wipe down furniture. Clean windows,G(make_cleaning_checklist -> X(declutter_bedroom -> X(dust_surfaces -> X(vacuum_or_sweep_floors -> X(change_bed_linens -> X(organize_closet -> X(wipe_down_furniture -> X(clean_windows)))))))),,,,,,,,,,
+Clean the Dining Room,Make a cleaning checklist. Declutter the dining table. Dust surfaces. Vacuum or sweep floors. Mop floors. Clean windows. Wipe down chairs. Set the table,G(make_cleaning_checklist -> X(declutter_dining_table -> X(dust_surfaces -> X(vacuum_or_sweep_floors -> X(mop_floors -> X(clean_windows -> X(wipe_down_chairs -> X(set_the_table)))))))),,,,,,,,,,
+Grocery Shopping,Make a shopping list. Go to the grocery store. Pick items from the list. Check out and pay. Pack groceries. Bring groceries home. Unpack and store groceries,"G(make_shopping_list ->
+  X(go_to_grocery_store ->
+    X(pick_items_from_list ->
+      X(check_out_and_pay ->
+        X(pack_groceries ->
+          X(bring_groceries_home ->
+            X(unpack_and_store_groceries)))))))",,,,,,,,,,
+Make Bed in Bedroom,Remove old linens. Put on fitted sheet. Put on flat sheet. Put on pillowcases. Place comforter or blanket. Arrange pillows,G(remove_old_linens -> X(put_on_fitted_sheet -> X(put_on_flat_sheet -> X(put_on_pillowcases -> X(place_comforter_or_blanket -> X(arrange_pillows))))))),,,,,,,,,,
+Water Plants in Living Room,Check soil moisture. Fill watering can. Water plants thoroughly. Empty excess water from saucers,"G(check_soil_moisture ->
+  X(fill_watering_can ->
+    X(water_plants_thoroughly ->
+      X(empty_excess_water_from_saucers))))",,,,,,,,,,
+Trash Disposal,Collect trash from all bins. Replace trash bags. Take out trash to curb or dumpster. Clean trash bins if needed,"G(collect_trash_from_all_bins ->
+  X(replace_trash_bags ->
+    X(take_out_trash_to_curb_or_dumpster ->
+      X(clean_trash_bins_if_needed))))",,,,,,,,,,
+Organize Closet in Bedroom,Remove all items. Sort items by category. Fold or hang clothes. Store items neatly. Dispose of unwanted items,"G(remove_all_items ->
+  X(sort_items_by_category ->
+    X(fold_or_hang_clothes ->
+      X(store_items_neatly ->
+        X(dispose_of_unwanted_items)))))",,,,,,,,,,
+Feed Pets in Kitchen,Measure appropriate food. Fill food bowl. Check and refill water. Clean food area,"G(measure_appropriate_food ->
+  X(fill_food_bowl ->
+    X(check_and_refill_water ->
+      X(clean_food_area))))",,,,,,,,,,
+Prepare Breakfast in Kitchen,Decide on a meal. Gather ingredients. Cook or prepare food. Serve breakfast. Clean up kitchen,"G(decide_on_meal ->
+  X(gather_ingredients ->
+    X(cook_or_prepare_food ->
+      X(serve_breakfast ->
+        X(clean_up_kitchen)))))",,,,,,,,,,
+Create Shopping List and send to master,"Enter the kitchen.Open the refrigerator and pantry.Check the current stock of food items.Identify items that need to be replenished.Take inventory of perishable and non-perishable goods.Compile a list of items to purchase based on inventory.Organize the list by category (e.g., produce, dairy, pantry items).Ensure the list is comprehensive and accurate.Send shopping list to master. ","G(enter_kitchen ->
+  X(open_refrigerator_and_pantry ->
+    X(check_current_stock ->
+      X(identify_items_to_replenish ->
+        X(take_inventory ->
+          X(compile_list_of_items_to_purchase ->
+            X(organize_list_by_category ->
+              X(ensure_comprehensive_and_accurate_list ->
+                X(send_shopping_list_to_master)))))))))",,,,,,,,,,
+Vacuuming Floors in Living Room,Plug in vacuum. Choose appropriate setting. Vacuum carpets and floors. Empty vacuum canister or bag,"G(plug_in_vacuum ->
+  X(choose_appropriate_setting ->
+    X(vacuum_carpets_and_floors ->
+      X(empty_vacuum_canister_or_bag))))",,,,,,,,,,
+Dust Furniture in Living Room,Gather dusting supplies. Dust all surfaces. Polish wood if needed. Clean dusting cloths,"G(gather_dusting_supplies ->
+  X(dust_all_surfaces ->
+    X(polish_wood_if_needed ->
+      X(clean_dusting_cloths))))",,,,,,,,,,
+Clean Bathroom,Gather cleaning supplies. Scrub toilet. Clean sink and counter. Wipe mirrors. Scrub shower or tub. Mop floor,"G(gather_cleaning_supplies ->
+  X(scrub_toilet ->
+    X(clean_sink_and_counter ->
+      X(wipe_mirrors ->
+        X(scrub_shower_or_tub ->
+          X(mop_floor)))))))",,,,,,,,,,
+Load Dishwasher in Kitchen,Scrape food off dishes. Load dishes into dishwasher. Add detergent. Start dishwasher,"G(scrape_food_off_dishes ->
+  X(load_dishes_into_dishwasher ->
+    X(add_detergent ->
+      X(start_dishwasher))))",,,,,,,,,,
+Iron Clothes in Laundry Room,Set up ironing board. Heat iron to appropriate setting. Iron clothes. Hang or fold ironed clothes,"G(set_up_ironing_board ->
+  X(heat_iron_to_appropriate_setting ->
+    X(iron_clothes ->
+      X(hang_or_fold_ironed_clothes))))
+",,,,,,,,,,
+Change Light Bulbs in Living Room,Gather necessary bulbs and tools. Turn off power. Remove old bulb. Install new bulb. Dispose of old bulb properly,"G(gather_necessary_bulbs_and_tools ->
+  X(turn_off_power ->
+    X(remove_old_bulb ->
+      X(install_new_bulb ->
+        X(dispose_of_old_bulb_properly)))))",,,,,,,,,,
+Wash Car in Driveway,Gather cleaning supplies. Rinse car with water. Wash with soap. Rinse soap off. Dry with clean cloth,"G(gather_cleaning_supplies ->
+  X(rinse_car_with_water ->
+    X(wash_with_soap ->
+      X(rinse_soap_off ->
+        X(dry_with_clean_cloth)))))
+",,,,,,,,,,
+Clean Windows in Living Room,Gather cleaning supplies. Spray windows with cleaner. Wipe with cloth or squeegee. Dry with clean cloth,"G(gather_cleaning_supplies ->
+  X(spray_windows_with_cleaner ->
+    X(wipe_with_cloth_or_squeegee ->
+      X(dry_with_clean_cloth))))
+",,,,,,,,,,
+Set Up Dinner Table in Dining Room,Clean table surface. Arrange plates. Set utensils. Place glasses. Add napkins. Arrange centerpieces if needed,"G(clean_table_surface ->
+  X(arrange_plates ->
+    X(set_utensils ->
+      X(place_glasses ->
+        X(add_napkins ->
+          X(arrange_centerpieces_if_needed)))))))
+",,,,,,,,,,
+Prepare Coffee in Kitchen,Fill coffee maker with water. Measure coffee grounds. Start coffee maker. Pour coffee into cups. Add milk or sugar if needed,"G(fill_coffee_maker_with_water ->
+  X(measure_coffee_grounds ->
+    X(start_coffee_maker ->
+      X(pour_coffee_into_cups ->
+        X(add_milk_or_sugar_if_needed))))))",,,,,,,,,,
+Pick Up Toys in Living Room,Collect all toys. Sort toys into appropriate bins. Store bins in designated area,"G(collect_all_toys ->
+  X(sort_toys_into_appropriate_bins ->
+    X(store_bins_in_designated_area)))
+",,,,,,,,,,
+Wash Laundry in Laundry Room,Sort laundry by color and type. Load washing machine. Add detergent. Start washing cycle,"G(sort_laundry_by_color_and_type ->
+  X(load_washing_machine ->
+    X(add_detergent ->
+      X(start_washing_cycle))))
+",,,,,,,,,,
+Clean Fridge in Kitchen,Remove all items from fridge. Dispose of expired items. Wipe down shelves and drawers. Organize items back into fridge,"G(remove_all_items_from_fridge ->
+  X(dispose_of_expired_items ->
+    X(wipe_down_shelves_and_drawers ->
+      X(organize_items_back_into_fridge))))",,,,,,,,,,
+Prepare Lunch in Kitchen,Decide on a meal. Gather ingredients. Cook or prepare food. Pack lunch if needed. Clean up kitchen,"G(decide_on_a_meal ->
+  X(gather_ingredients ->
+    X(cook_or_prepare_food ->
+      X(pack_lunch_if_needed ->
+        X(clean_up_kitchen)))))
+",,,,,,,,,,
+Take Out Recycling,Collect recyclable items. Sort items by type. Take out recycling to bin. Clean recycling bins if needed,"G(collect_recyclable_items ->
+  X(sort_items_by_type ->
+    X(take_out_recycling_to_bin ->
+      X(clean_recycling_bins_if_needed))))
+",,,,,,,,,,
+Make Coffee in Kitchen,Fill water reservoir. Measure and add coffee grounds. Start coffee maker. Serve coffee. Clean coffee maker,"G(fill_water_reservoir ->
+  X(measure_and_add_coffee_grounds ->
+    X(start_coffee_maker ->
+      X(serve_coffee ->
+        X(clean_coffee_maker)))))",,,,,,,,,,
+Pack Lunch for Work in Kitchen,Decide on lunch items. Prepare and pack food. Include necessary utensils. Pack beverage. Store in lunch bag or container,"G(decide_on_lunch_items ->
+  X(prepare_and_pack_food ->
+    X(include_necessary_utensils ->
+      X(pack_beverage ->
+        X(store_in_lunch_bag_or_container)))))
+",,,,,,,,,,
+Change Bed Linens in Bedroom,Remove old bed linens. Put on clean sheets. Replace pillowcases. Arrange blankets and comforter,"G(remove_old_bed_linens ->
+  X(put_on_clean_sheets ->
+    X(replace_pillowcases ->
+      X(arrange_blankets_and_comforter)))))",,,,,,,,,,
+Set Up Workstation in Home Office,Clean desk surface. Arrange computer and accessories. Set up necessary supplies. Organize cables,"G(clean_desk_surface ->
+  X(arrange_computer_and_accessories ->
+    X(set_up_necessary_supplies ->
+      X(organize_cables)))))
+",,,,,,,,,,
+Clean Microwave in Kitchen,Remove loose debris. Wipe down interior with cleaner. Clean turntable. Wipe down exterior,"G(remove_loose_debris ->
+  X(wipe_down_interior_with_cleaner ->
+    X(clean_turntable ->
+      X(wipe_down_exterior)))))
+",,,,,,,,,,
+Organize Bookshelf in Living Room,Remove all books. Dust shelves. Sort books by category or alphabetically. Arrange books neatly,"G(remove_all_books ->
+  X(dust_shelves ->
+    X(sort_books_by_category_or_alphabetically ->
+      X(arrange_books_neatly))))
+",,,,,,,,,,
+Grocery Shopping,Create shopping list. Go to store. Select items. Pay for items. Bring items home. Unpack groceries,"G(shopping_list_created ->
+  X(go_to_store ->
+    X(select_items ->
+      X(pay_for_items ->
+        X(bring_items_home ->
+          X(unpack_groceries)))))))",,,,,,,,,,
+Clean Living Room,Dust surfaces. Vacuum or sweep floor. Arrange cushions and pillows. Wipe down electronics,"G(dust_surfaces ->
+  X(vacuum_or_sweep_floor ->
+    X(arrange_cushions_and_pillows ->
+      X(wipe_down_electronics))))",,,,,,,,,,
+Fold Laundry in Laundry Room,Remove dry clothes from dryer. Sort items. Fold clothes neatly. Put away folded clothes,"G(remove_dry_clothes_from_dryer ->
+  X(sort_items ->
+    X(fold_clothes_neatly ->
+      X(put_away_folded_clothes))))",,,,,,,,,,
+Prepare Dinner in Kitchen,Choose recipe. Gather ingredients. Cook according to recipe. Set table. Serve dinner. Clean up kitchen,"G(choose_recipe ->
+  X(gather_ingredients ->
+    X(cook_according_to_recipe ->
+      X(set_table ->
+        X(serve_dinner ->
+          X(clean_up_kitchen)))))",,,,,,,,,,
+Organize Pantry in Kitchen,Remove all items. Wipe down shelves. Sort items by category. Place items back neatly. Dispose of expired items,"G(remove_all_items ->
+  X(wipe_down_shelves ->
+    X(sort_items_by_category ->
+      X(place_items_back_neatly ->
+        X(dispose_of_expired_items)))))
+",,,,,,,,,,
+Refill Supplies in Kitchen,Check supply levels. Make a list of needed items. Refill supplies from storage. Dispose of empty containers,"G(check_supply_levels ->
+  X(make_list_of_needed_items ->
+    X(refill_supplies_from_storage ->
+      X(dispose_of_empty_containers))))
+",,,,,,,,,,
+Pet Feeding in Kitchen,Measure food portions. Fill food bowls. Refill water bowls. Clean feeding area,"G(measure_food_portions ->
+  X(fill_food_bowls ->
+    X(refill_water_bowls ->
+      X(clean_feeding_area))))",,,,,,,,,,
+Sweep Floors in Living Room,Gather broom and dustpan. Sweep floors thoroughly. Dispose of dirt and debris. Clean broom and dustpan,"G(gather_broom_and_dustpan ->
+  X(sweep_floors_thoroughly ->
+    X(dispose_of_dirt_and_debris ->
+      X(clean_broom_and_dustpan))))",,,,,,,,,,
+Prepare Snacks in Kitchen,Choose snacks. Gather ingredients. Prepare snacks. Serve snacks. Clean up area,"G(choose_snacks ->
+  X(gather_ingredients ->
+    X(prepare_snacks ->
+      X(serve_snacks ->
+        X(clean_up_area)))))
+",,,,,,,,,,
+Clean Mirrors in Bathroom,Gather cleaning supplies. Spray mirror with cleaner. Wipe with cloth. Buff to shine,"G(gather_cleaning_supplies ->
+  X(spray_mirror_with_cleaner ->
+    X(wipe_with_cloth ->
+      X(buff_to_shine))))",,,,,,,,,,

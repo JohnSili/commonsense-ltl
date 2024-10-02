@@ -1,0 +1,8 @@
+
+The process of executing the action associated with the task - {Task} is represented, each action is separated by -> (where the arrow means transition between actions), here is the plan
+
+
+{ProcessedPlan}
+
+
+replace the missing actions based on your own view of the world, apply logical knowledge of the world and general knowledge of everyday actions, where things are, apply this knowledge and submit the corrected plan with additions.
